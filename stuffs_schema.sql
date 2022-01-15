@@ -29,3 +29,5 @@ select * from useraccount
 select * from reports
 
 drop table Reports
+
+delete from Reports
