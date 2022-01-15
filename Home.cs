@@ -124,17 +124,26 @@ namespace stuffs
                 dataGridView1.Rows.Clear();
                 dataGridView1.Refresh();
                 LoadTable();
+
+                lblGenerateTxt.Text = "All reports will be displayed in current records";
+                lblDisplayMonthYear.Text = "";
             }
             else
             {
                 dataGridView1.Rows.Clear();
                 dataGridView1.Refresh();
                 SearchResults();
+
+                lblGenerateTxt.Text = "Generated reports from the month of";
+                lblDisplayMonthYear.Text = cmbSearchMonth.Text + " " + cmbSearchYear.Text;
             }
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
+            lblGenerateTxt.Text = "All reports will be displayed in current records";
+            lblDisplayMonthYear.Text = "";
+
             lblAccountName.Text = Login.GetAccountName.ToString();
             LoadTable();
 
