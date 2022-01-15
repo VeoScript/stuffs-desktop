@@ -45,7 +45,7 @@
             this.btnExport = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblDisplayMonthYear = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblGenerateTxt = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -248,7 +248,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.lblDisplayMonthYear);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lblGenerateTxt);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
@@ -261,18 +261,16 @@
             this.lblDisplayMonthYear.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDisplayMonthYear.Location = new System.Drawing.Point(244, 15);
             this.lblDisplayMonthYear.Name = "lblDisplayMonthYear";
-            this.lblDisplayMonthYear.Size = new System.Drawing.Size(103, 22);
+            this.lblDisplayMonthYear.Size = new System.Drawing.Size(0, 22);
             this.lblDisplayMonthYear.TabIndex = 0;
-            this.lblDisplayMonthYear.Text = "December 2021";
             // 
-            // label5
+            // lblGenerateTxt
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(227, 22);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Generated reports from the month of";
+            this.lblGenerateTxt.AutoSize = true;
+            this.lblGenerateTxt.Location = new System.Drawing.Point(21, 15);
+            this.lblGenerateTxt.Name = "lblGenerateTxt";
+            this.lblGenerateTxt.Size = new System.Drawing.Size(0, 22);
+            this.lblGenerateTxt.TabIndex = 0;
             // 
             // label7
             // 
@@ -464,7 +462,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDisplayMonthYear;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblGenerateTxt;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label lblAccountName;
