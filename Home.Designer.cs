@@ -47,7 +47,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblDisplayMonthYear = new System.Windows.Forms.Label();
             this.lblGenerateTxt = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblCountReports = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -274,15 +274,15 @@
             this.lblGenerateTxt.Size = new System.Drawing.Size(0, 22);
             this.lblGenerateTxt.TabIndex = 0;
             // 
-            // label7
+            // lblCountReports
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(167, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 22);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "95";
+            this.lblCountReports.AutoSize = true;
+            this.lblCountReports.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCountReports.Location = new System.Drawing.Point(167, 10);
+            this.lblCountReports.Name = "lblCountReports";
+            this.lblCountReports.Size = new System.Drawing.Size(18, 22);
+            this.lblCountReports.TabIndex = 0;
+            this.lblCountReports.Text = "0";
             // 
             // label6
             // 
@@ -307,7 +307,7 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Controls.Add(this.label7);
+            this.panel8.Controls.Add(this.lblCountReports);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(600, 0);
             this.panel8.Name = "panel8";
@@ -462,7 +462,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblCountReports;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDisplayMonthYear;
         private System.Windows.Forms.Label lblGenerateTxt;

@@ -77,6 +77,8 @@ namespace stuffs
 
                 dt.AcceptChanges();
                 con.Close();
+
+                lblCountReports.Text = dataGridView1.Rows.Count.ToString();
             }
             catch (Exception ex)
             {
@@ -113,6 +115,8 @@ namespace stuffs
 
                 dt.AcceptChanges();
                 con.Close();
+
+                lblCountReports.Text = dataGridView1.Rows.Count.ToString();
             }
             catch (Exception ex)
             {
