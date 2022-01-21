@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateAccount));
             this.linkBackToLogin = new System.Windows.Forms.LinkLabel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -225,6 +226,7 @@
             this.ClientSize = new System.Drawing.Size(451, 569);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MinimumSize = new System.Drawing.Size(467, 608);
             this.Name = "CreateAccount";

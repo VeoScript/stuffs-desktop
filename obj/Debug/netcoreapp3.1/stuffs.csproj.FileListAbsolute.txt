@@ -20,7 +20,12 @@ C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sn
 C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\stuffs.csproj.CoreCompileInputs.cache
 C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\stuffs.csproj.CopyComplete
 C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\stuffs.DialogForms.CreateReport.resources
 C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\stuffs.DialogForms.UpdateReport.resources
+C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\stuffs.csproj.ResolveComReference.cache
+C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\jerom\Desktop\stuffs\bin\Debug\netcoreapp3.1\itextsharp.dll
+C:\Users\jerom\Desktop\stuffs\obj\Debug\netcoreapp3.1\stuffs.csproj.CoreCompileInputs.cache
