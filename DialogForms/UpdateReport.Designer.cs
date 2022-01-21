@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateReport));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.cmbYearDateResolved = new System.Windows.Forms.ComboBox();
@@ -354,6 +355,7 @@
             this.Controls.Add(this.cmbYearDateResolved);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCancel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(655, 384);
             this.MinimumSize = new System.Drawing.Size(655, 384);
             this.Name = "UpdateReport";
