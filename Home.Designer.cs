@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbSearchMonth = new System.Windows.Forms.ComboBox();
@@ -106,6 +107,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnReset);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.cmbSearchMonth);
@@ -116,11 +118,22 @@
             this.panel3.Size = new System.Drawing.Size(582, 79);
             this.panel3.TabIndex = 1;
             // 
+            // btnReset
+            // 
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Location = new System.Drawing.Point(488, 39);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(79, 30);
+            this.btnReset.TabIndex = 3;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(408, 14);
+            this.label4.Location = new System.Drawing.Point(323, 14);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 22);
             this.label4.TabIndex = 0;
@@ -130,7 +143,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(226, 14);
+            this.label3.Location = new System.Drawing.Point(141, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 22);
             this.label3.TabIndex = 0;
@@ -154,7 +167,7 @@
             "October",
             "November",
             "December"});
-            this.cmbSearchMonth.Location = new System.Drawing.Point(408, 39);
+            this.cmbSearchMonth.Location = new System.Drawing.Point(323, 39);
             this.cmbSearchMonth.Name = "cmbSearchMonth";
             this.cmbSearchMonth.Size = new System.Drawing.Size(162, 30);
             this.cmbSearchMonth.TabIndex = 2;
@@ -176,7 +189,7 @@
             "2028",
             "2029",
             "2030"});
-            this.cmbSearchYear.Location = new System.Drawing.Point(226, 39);
+            this.cmbSearchYear.Location = new System.Drawing.Point(141, 39);
             this.cmbSearchYear.Name = "cmbSearchYear";
             this.cmbSearchYear.Size = new System.Drawing.Size(176, 30);
             this.cmbSearchYear.TabIndex = 1;
@@ -480,5 +493,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Button btnReset;
     }
 }

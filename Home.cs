@@ -193,6 +193,15 @@ namespace stuffs
             Close();
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            cmbSearchYear.SelectedIndex = -1;
+            cmbSearchMonth.SelectedIndex = -1;
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
+            LoadTable();
+        }
+
         private void btnCreate_Click(object sender, EventArgs e)
         {
             DialogForms.CreateReport cr = new DialogForms.CreateReport();
@@ -228,10 +237,10 @@ namespace stuffs
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            ExportToExcel();
+            ExportToPDF();
         }
 
-        private void ExportToExcel()
+        private void ExportToPDF()
         {
             if (dataGridView1.Rows.Count > 0)
             {
@@ -240,7 +249,7 @@ namespace stuffs
                 
                 if (cmbSearchYear.SelectedIndex > 0 && cmbSearchMonth.SelectedIndex > 0)
                 {
-                    sfd.FileName = cmbSearchMonth.Text + " - " + cmbSearchYear.Text;
+                    sfd.FileName = "Monthly Report" + " - " + cmbSearchMonth.Text + " " + cmbSearchYear.Text;
                 } 
                 else
                 {
@@ -271,9 +280,29 @@ namespace stuffs
                             pdfTable.WidthPercentage = 100;
                             pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
 
+                            //foreach (DataGridViewColumn column in dataGridView1.Columns)
+                            //{
+                            //    if (!column.Visible) continue;
+
+                            //    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                            //    cell.BackgroundColor = new iTextSharp.text.BaseColor(240, 240, 240);
+                            //    pdfTable.AddCell(cell);
+                            //}
+
+                            //foreach (DataGridViewRow row in dataGridView1.Rows)
+                            //{
+                            //    foreach (DataGridViewCell cell in row.Cells)
+                            //    {
+                            //        if (!dataGridView1.Columns[cell.ColumnIndex].Visible) continue;
+
+                            //        pdfTable.AddCell(new Phrase(cell.Value.ToString()));
+                            //    }
+                            //}
+
                             foreach (DataGridViewColumn column in dataGridView1.Columns)
                             {
                                 PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                                cell.BackgroundColor = new iTextSharp.text.BaseColor(250, 192, 86);
                                 pdfTable.AddCell(cell);
                             }
 
@@ -287,7 +316,7 @@ namespace stuffs
 
                             using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
                             {
-                                Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                                Document pdfDoc = new Document(PageSize.LETTER, 10f, 20f, 20f, 10f);
                                 PdfWriter.GetInstance(pdfDoc, stream);
                                 pdfDoc.Open();
                                 pdfDoc.Add(pdfTable);
@@ -295,7 +324,7 @@ namespace stuffs
                                 stream.Close();
                             }
 
-                            MessageBox.Show("Data Exported Successfully !!!", "Export to PDF", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Data exported successfully!", "Export to PDF", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         catch (Exception ex)
                         {
@@ -306,7 +335,7 @@ namespace stuffs
             }
             else
             {
-                MessageBox.Show("No Record To Export !!!", "System Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No record to export!", "System Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

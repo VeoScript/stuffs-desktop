@@ -46,6 +46,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -86,7 +92,7 @@
             "2028",
             "2029",
             "2030"});
-            this.cmbYearDateResolved.Location = new System.Drawing.Point(516, 116);
+            this.cmbYearDateResolved.Location = new System.Drawing.Point(516, 155);
             this.cmbYearDateResolved.Name = "cmbYearDateResolved";
             this.cmbYearDateResolved.Size = new System.Drawing.Size(97, 23);
             this.cmbYearDateResolved.TabIndex = 9;
@@ -130,7 +136,7 @@
             "29",
             "30",
             "31"});
-            this.cmbDayDateResolved.Location = new System.Drawing.Point(452, 116);
+            this.cmbDayDateResolved.Location = new System.Drawing.Point(452, 155);
             this.cmbDayDateResolved.Name = "cmbDayDateResolved";
             this.cmbDayDateResolved.Size = new System.Drawing.Size(58, 23);
             this.cmbDayDateResolved.TabIndex = 8;
@@ -151,7 +157,7 @@
             "2028",
             "2029",
             "2030"});
-            this.cmbYearDateReported.Location = new System.Drawing.Point(516, 54);
+            this.cmbYearDateReported.Location = new System.Drawing.Point(516, 77);
             this.cmbYearDateReported.Name = "cmbYearDateReported";
             this.cmbYearDateReported.Size = new System.Drawing.Size(97, 23);
             this.cmbYearDateReported.TabIndex = 6;
@@ -174,7 +180,7 @@
             "October",
             "November",
             "December"});
-            this.cmbMonthDateResolved.Location = new System.Drawing.Point(309, 116);
+            this.cmbMonthDateResolved.Location = new System.Drawing.Point(309, 155);
             this.cmbMonthDateResolved.Name = "cmbMonthDateResolved";
             this.cmbMonthDateResolved.Size = new System.Drawing.Size(137, 23);
             this.cmbMonthDateResolved.TabIndex = 7;
@@ -218,7 +224,7 @@
             "29",
             "30",
             "31"});
-            this.cmbDayDateReported.Location = new System.Drawing.Point(452, 54);
+            this.cmbDayDateReported.Location = new System.Drawing.Point(452, 77);
             this.cmbDayDateReported.Name = "cmbDayDateReported";
             this.cmbDayDateReported.Size = new System.Drawing.Size(58, 23);
             this.cmbDayDateReported.TabIndex = 5;
@@ -241,7 +247,7 @@
             "October",
             "November",
             "December"});
-            this.cmbMonthDateReported.Location = new System.Drawing.Point(309, 54);
+            this.cmbMonthDateReported.Location = new System.Drawing.Point(309, 77);
             this.cmbMonthDateReported.Name = "cmbMonthDateReported";
             this.cmbMonthDateReported.Size = new System.Drawing.Size(137, 23);
             this.cmbMonthDateReported.TabIndex = 4;
@@ -286,7 +292,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(309, 91);
+            this.label3.Location = new System.Drawing.Point(309, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 0;
@@ -330,6 +336,66 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Poppins", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(309, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Month";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Poppins", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(452, 60);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(28, 17);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Day";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Poppins", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(516, 60);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(31, 17);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Year";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Poppins", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(309, 137);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Month";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Poppins", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(452, 137);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 17);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Day";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Poppins", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(516, 137);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 17);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Year";
+            // 
             // UpdateReport
             // 
             this.AcceptButton = this.btnUpdate;
@@ -338,6 +404,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(639, 345);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -386,5 +458,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
