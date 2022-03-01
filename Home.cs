@@ -37,6 +37,9 @@ namespace stuffs
         public static string GetDateReported;
         public static string GetDateResolved;
 
+        public static string GetYear;
+        public static string GetMonth;
+
         private const int CP_NOCLOSE_BUTTON = 0x200;
         protected override CreateParams CreateParams
         {
@@ -128,6 +131,9 @@ namespace stuffs
         {
             if (cmbSearchYear.SelectedIndex == 0 && cmbSearchMonth.SelectedIndex == 0)
             {
+                GetYear = "";
+                GetMonth = "";
+
                 dataGridView1.Rows.Clear();
                 dataGridView1.Refresh();
                 LoadTable();
@@ -137,6 +143,9 @@ namespace stuffs
             }
             else
             {
+                GetYear = cmbSearchYear.Text;
+                GetMonth = cmbSearchMonth.Text;
+
                 dataGridView1.Rows.Clear();
                 dataGridView1.Refresh();
                 SearchResults();
