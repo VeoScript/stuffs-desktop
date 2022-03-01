@@ -21,6 +21,12 @@ namespace stuffs.DialogForms
         public static SqlDataReader reader;
         public static string QueryUpdate;
 
+        //this function will insert the text with a apostrophe or single quote character
+        public string convertSingleQuotes(string str)
+        {
+            return str.Replace("'", "''");
+        }
+
         private void UpdateReport_Load(object sender, EventArgs e)
         {
             string DateReported;
@@ -78,7 +84,7 @@ namespace stuffs.DialogForms
 
             try
             {
-                QueryUpdate = "UPDATE Reports SET requestingPerson='" + txtRequestingPerson.Text + "', reportedIssue='" + txtReportedIssue.Text + "', resolutionMade='" + txtResolutionMade.Text + "', dateReportedMonth='" + cmbMonthDateReported.SelectedItem + "', dateReportedDay='" + cmbDayDateReported.SelectedItem + "', dateReportedYear='" + cmbYearDateReported.SelectedItem + "', dateResolvedMonth='" + cmbMonthDateResolved.SelectedItem + "', dateResolvedDay='" + cmbDayDateResolved.SelectedItem + "', dateResolvedYear='" + cmbYearDateResolved.SelectedItem + "' WHERE uuid='" + reportUuid + "'";
+                QueryUpdate = "UPDATE Reports SET requestingPerson='" + txtRequestingPerson.Text + "', reportedIssue='" + convertSingleQuotes(txtReportedIssue.Text) + "', resolutionMade='" + convertSingleQuotes(txtResolutionMade.Text) + "', dateReportedMonth='" + cmbMonthDateReported.SelectedItem + "', dateReportedDay='" + cmbDayDateReported.SelectedItem + "', dateReportedYear='" + cmbYearDateReported.SelectedItem + "', dateResolvedMonth='" + cmbMonthDateResolved.SelectedItem + "', dateResolvedDay='" + cmbDayDateResolved.SelectedItem + "', dateResolvedYear='" + cmbYearDateResolved.SelectedItem + "' WHERE uuid='" + reportUuid + "'";
 
                 con.Open();
                 cmd = new SqlCommand(QueryUpdate, con);
@@ -130,6 +136,7 @@ namespace stuffs.DialogForms
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                con.Close();
             }
         }
     }

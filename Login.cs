@@ -95,6 +95,7 @@ namespace stuffs
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    con.Close();
                 }
             }
         }
