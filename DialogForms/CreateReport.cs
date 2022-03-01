@@ -21,6 +21,12 @@ namespace stuffs.DialogForms
         public static SqlDataReader reader;
         public static string QueryInsert;
 
+        //this function will insert the text with a apostrophe or single quote character
+        public string convertSingleQuotes(string str)
+        {
+            return str.Replace("'", "''");
+        }
+
         private void ClearAll()
         {
             txtRequestingPerson.Clear();
@@ -93,7 +99,7 @@ namespace stuffs.DialogForms
                     Guid guid = Guid.NewGuid();
                     string account_uuid = guid.ToString();
 
-                    QueryInsert = "INSERT INTO Reports(uuid, reportBy, requestingPerson, reportedIssue, resolutionMade, dateReportedMonth, dateReportedDay, dateReportedYear, dateResolvedMonth, dateResolvedDay, dateResolvedYear) VALUES('" + account_uuid + "', '" + Login.GetAccountUsername.ToString() + "', '" + txtRequestingPerson.Text + "', '" + txtReportedIssue.Text + "', '" + txtResolutionMade.Text + "', '" + cmbMonthDateReported.SelectedItem + "', '" + cmbDayDateReported.SelectedItem + "', '" + cmbYearDateReported.SelectedItem + "', '" + cmbMonthDateResolved.SelectedItem + "', '" + cmbDayDateResolved.SelectedItem + "', '" + cmbYearDateResolved.SelectedItem + "')";
+                    QueryInsert = "INSERT INTO Reports(uuid, reportBy, requestingPerson, reportedIssue, resolutionMade, dateReportedMonth, dateReportedDay, dateReportedYear, dateResolvedMonth, dateResolvedDay, dateResolvedYear) VALUES('" + account_uuid + "', '" + Login.GetAccountUsername.ToString() + "', '" + txtRequestingPerson.Text + "', '" + convertSingleQuotes(txtReportedIssue.Text) + "', '" + convertSingleQuotes(txtResolutionMade.Text) + "', '" + cmbMonthDateReported.SelectedItem + "', '" + cmbDayDateReported.SelectedItem + "', '" + cmbYearDateReported.SelectedItem + "', '" + cmbMonthDateResolved.SelectedItem + "', '" + cmbDayDateResolved.SelectedItem + "', '" + cmbYearDateResolved.SelectedItem + "')";
                     con.Open();
                     cmd = new SqlCommand(QueryInsert, con);
                     cmd.ExecuteNonQuery();
@@ -111,6 +117,7 @@ namespace stuffs.DialogForms
                 catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    con.Close();
                 }
             }
         }
