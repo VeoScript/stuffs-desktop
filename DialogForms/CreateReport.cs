@@ -45,6 +45,14 @@ namespace stuffs.DialogForms
             Close();
         }
 
+        private void CreateReport_Load(object sender, EventArgs e)
+        {
+            cmbMonthDateReported.SelectedItem = Home.GetMonth;
+            cmbYearDateReported.SelectedItem = Home.GetYear;
+            cmbMonthDateResolved.SelectedItem = Home.GetMonth;
+            cmbYearDateResolved.SelectedItem = Home.GetYear;
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (txtRequestingPerson.Text == "")

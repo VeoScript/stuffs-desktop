@@ -423,6 +423,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Create Report";
+            this.Load += new System.EventHandler(this.CreateReport_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
