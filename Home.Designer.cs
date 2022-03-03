@@ -312,9 +312,9 @@
             this.panel7.Controls.Add(this.lblAccountName);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 380);
+            this.panel7.Location = new System.Drawing.Point(0, 382);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(800, 39);
+            this.panel7.Size = new System.Drawing.Size(800, 37);
             this.panel7.TabIndex = 4;
             // 
             // panel8
@@ -324,7 +324,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(600, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 39);
+            this.panel8.Size = new System.Drawing.Size(200, 37);
             this.panel8.TabIndex = 2;
             // 
             // lblAccountName
@@ -418,7 +418,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 128);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 254);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.Text = "dataGridView1";
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
@@ -429,8 +429,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 419);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
